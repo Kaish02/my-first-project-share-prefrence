@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#343434"
+    >
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/top_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/app_name"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome To Home Page"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#ffff"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="50dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/imageView4NextRegisterPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/btn_login"
+                android:layout_marginLeft="278dp"
+                android:contentDescription="@string/app_name"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/loginTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Name : -"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FF5722"
+                tools:ignore="DuplicateIds" />
+            <TextView
+                android:id="@+id/showUserNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="show Name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ffff"
+                />
+            </LinearLayout>
+            <Button
+                android:id="@+id/logOutSpDataButton"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="200dp"
+                android:backgroundTint="#141414"
+                android:text="LogOut" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

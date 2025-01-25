@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#343434"
+    tools:context=".UserRegister"
+    >
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/top_background"
+        android:contentDescription="@string/app_name"
+        />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Register Account"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        />
+
+    <EditText
+        android:id="@+id/nameRegEditText"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:drawableStart="@drawable/name"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Enter your name"
+        android:textColorHint="#e1a"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:drawablePadding="15dp"
+        />
+    <EditText
+        android:id="@+id/emailRegEditText"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:textColor="#fff"
+        android:inputType="textEmailAddress"
+        android:drawableStart="@drawable/email"
+        android:layout_marginTop="320dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Enter Your Email"
+        android:textColorHint="#e1a"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:drawablePadding="15dp"
+        />
+
+    <EditText
+        android:id="@+id/PasswordRegEditText"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:ems="10"
+        android:textColor="#fff"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/password"
+        android:layout_marginTop="380dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Enter Your Password"
+        android:textColorHint="#e1a"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:drawablePadding="15dp"
+        />
+    <EditText
+        android:id="@+id/RePasswordRegEditText"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/password"
+        android:layout_marginTop="450dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Enter Your Re-Password"
+        android:textColorHint="#e1a"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:drawablePadding="15dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView4NextLoginPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/btn_login"
+        android:layout_marginTop="460dp"
+        android:layout_marginLeft="278dp"
+        />
+
+<!--    <TextView-->
+<!--        android:id="@+id/text2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Are You New User?Register"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textColor="#ffc107"-->
+<!--        android:layout_marginTop="600dp"-->
+<!--        android:layout_marginLeft="90dp"-->
+<!--        />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="600dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="Have Account?  " />
+        <TextView
+            android:id="@+id/textView2LoginPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#F44336"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Login" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveShowDataRegButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#141414"
+        android:layout_marginTop="650dp"/>
+
+
+</RelativeLayout>
+
